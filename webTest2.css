@@ -415,17 +415,12 @@ aside > div > h2,h4{
 
 
 
-@media screen and (max-width:800px){
+@media screen and (max-width:920px){
 
 
   nav > ul {
     display: block;
   }
-
-
-
-
-
 
 
   header {
