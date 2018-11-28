@@ -45,7 +45,7 @@
 
           <li class="imageWrapper">
             <div class="cont-div">
-              <a id = "Profotio" >
+              <a id = "Profotio2" >
                 <img src="https://image.flaticon.com/icons/png/128/332/332379.png" srcset="https://image.flaticon.com/icons/png/512/332/332379.png 4x" alt="Analytics" width="44" height="44">
                 <p class="cornerLink">Profotio</p>
               </a>
@@ -123,7 +123,8 @@
           <li>
             <div class="dropdown">
 
-              <button class="dropbtn">
+              <div class="dropbtn">
+
                 <div class="three col">
                   <div class="hamburger" id="hamburger-5">
                     <span class="line"></span>
@@ -131,7 +132,7 @@
                     <span class="line"></span>
                   </div>
                 </div>
-              </button>
+              </div>
 
               <div class="dropdown-content">
 
@@ -321,7 +322,7 @@
             <button class = "kunderB" onclick="myFunction()">Kunders kommentarer</button>
           </div>
 
-          <hr id = "kunder">
+
 
 
           <div id="myDIV">
@@ -355,7 +356,7 @@
           </div>
         </div>
 
-            <form id = "register" action="/action_page.php">
+            <form  action="/action_page.php">
               <div id = "registerGo" class="email">
                 <h1>Register</h1>
                 <p>Please fill in this form to create an account.</p>
@@ -413,7 +414,7 @@
 
 
 
-        <map id = "Contact">
+        <map id = "Contact" name="Contact">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2092.561046893091!2d12.329771615605297!3d58.367074494839514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46452308d461ec5b%3A0x4e77bf81d2ae9c9f!2sBirger+Sj%C3%B6berggymnasiet!5e0!3m2!1ssv!2sse!4v1540999348311"  frameborder="0" style="border:0" allowfullscreen></iframe>
 
               <div class="p">
@@ -483,7 +484,7 @@
 
     </div>
     <!--hamburger button-->
-    <script type="text/javascript">
+    <script>
       $(document).ready(function(){
       $(".hamburger").hover(function(){
         $(this).toggleClass("is-active");
@@ -517,7 +518,7 @@
     </script>
 
     <!--bider-->
-    <script type="text/javascript">
+    <script >
       const galleryItem = document.getElementsByClassName("gallery-item");
       const lightBoxContainer = document.createElement("div");
       const lightBoxContent = document.createElement("div");
@@ -580,9 +581,9 @@
     </script>
 
     <!--moving slowly-->
-    <script type="text/javascript">
+    <script>
 
-    $("#Profotio").click(function() {
+    $("#Profotio2").click(function() {
 
     $('html,body').animate({
       scrollTop:$("figure").offset().top}, 2000);
