@@ -1,5 +1,5 @@
 <?php
-  include_once 'http://mohkan1.github.io/test/testphp.php';
+  include_once 'mohkan1.github.io/test/testphp.php';
 ?>
 
 
