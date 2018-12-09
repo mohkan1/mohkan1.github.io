@@ -1,0 +1,63 @@
+<?php
+  include_once 'C:\xampp\htdocs/testphp.php';
+?>
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      *{
+        margin: 0;
+      }
+      form{
+        background-color: #008080;
+        text-align: center;
+        margin: auto;
+        height: 100px;
+        overflow: auto;
+        padding: 70px 0;
+
+      }
+
+      form > button{
+        background-color: white; /* Green */
+        border: none;
+        color: black;
+        padding: 15px 31px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+
+    </style>
+
+
+  </head>
+  <body>
+    <form method="post">
+      <button type="open" name="open">open</button>
+      <button type="close" name="close">close</button>
+    </form>
+
+
+
+    <?php
+
+    if(isset($_POST['open'])){
+      $sql = "UPDATE openclosedoor SET action='1' WHERE command='command1'";
+      mysqli_query($conn, $sql);
+    }
+
+
+    if(isset($_POST['close'])){
+      $sql = "UPDATE openclosedoor SET action='2' WHERE command='command1'";
+      mysqli_query($conn, $sql);
+    }
+
+  ?>
+  </body>
+</html>
